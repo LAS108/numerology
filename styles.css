@@ -1,0 +1,57 @@
+body {
+background: url('img/fon.jpg');
+}
+
+.photo-container {
+	text-align: center;
+	padding: 40px 0px 0px 0px;
+	
+}
+
+.photo {
+	display: inline-block;
+	margin: 25px;
+	position: relative;
+	height: 150px;
+	width: 160px;
+	background-color: #fff;
+	padding: 10px 10px 40px 10px;
+	border: 1px solid #666;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	box-shadow: 5px 7px 15px 0px #666;
+	transition:  0.4s 0.2s;
+	font-family: Gill Sans Extrabold, sans-serif;
+	
+	
+	}
+
+.photo img {
+	height: 100%;
+	width: 100%;
+	filter: grayscale(1);
+	text-align: center;
+	transition:  0.4s 0.2s;
+}
+
+.right {
+	transform: rotate(9deg);
+}
+
+.left {
+	transform: rotate(-5deg);
+}
+
+.photo:hover {
+	transform: scale(1.5);
+	z-index: 1;
+	color: #000;
+	
+}
+
+.photo:hover img{
+	filter: none;
+
+}
