@@ -1,0 +1,191 @@
+
+html, body{
+	height: 100%;
+	/*font-family: verdana, arial, sans-serif;*/
+}
+
+.wrapper{
+	max-width: 1200px;
+	height: 110%;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+.title{
+	text-align:center;
+	color: #800000;
+}
+
+.block__row{
+	
+	display: flex;
+}
+
+.block__foto2{
+	height: 150px;
+	width: 80%;
+	overflow:hidden;
+	border-radius: 35px;
+	display: none;
+	margin: 20px auto ;
+	align-items:center;
+}
+
+.block__foto2 img {
+	max-height:100%;
+}
+
+.block__foto{
+	flex: 0 0 280px;
+	height: 420px;
+	position: relative;
+	overflow:hidden;
+	border-radius: 35px;
+
+}
+
+.block__foto img{
+	position: absolute;
+	max-height:100%;	
+}
+
+@media (max-width:700px) {
+	.block__row{
+		flex-direction:column;
+	}
+	.block__foto{
+	display: none;
+	}
+	.block__foto2{
+	display: block;
+	}
+	
+}
+
+.block__info{
+	margin: 0 0 0 20px;
+}
+
+.block__item{
+	padding: 0px 0 20px 0;
+}
+
+.block__title{
+	position: relative;
+	padding: 0px 0 0 30px;
+	cursor: pointer;
+}
+
+.block__title:before {  
+  top: 0;
+  left: 0;
+  background: url(../img/s.png) no-repeat 50% 50% / 1em 1em;
+  width: 1em;
+  height: 1em;  
+  content: "";
+  position: absolute;
+  transition: transform 1s;
+ }
+
+.block__title.active:before{
+	 transform: rotateZ(90deg);
+}
+
+.block__text{
+	padding: 10px 10px 0 0;
+	display: none;
+	text-align: justify;
+}
+
+.themsWrap{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: center;
+	margin: 10px;
+}
+
+.thems{
+	flex: 0 0 280px;
+	height: 420px;
+	position:relative;
+	border-radius: 35px;
+	overflow:hidden;
+	position: relative;
+	margin: 5px;
+}
+
+.thems img{
+	position: absolute;
+	max-height:100%;
+	}
+	
+@media (max-width:1210px) {
+	.thems {
+	flex: 0 0 260px;
+	height: 350px;
+	}
+	.block__foto{
+	flex: 0 0 260px;
+	height: 350px;
+	}
+}
+
+@media (max-width:1135px) {
+	.thems{
+	flex: 0 0 210px;
+	height: 310px;	
+	}
+	.block__foto{
+	flex: 0 0 200px;
+	height: 300px;
+	}
+}
+
+@media (max-width:710px) {
+	.thems{
+	flex: 0 0 180px;
+	height: 280px;	
+	}
+	.block__foto{
+	flex: 0 0 180px;
+	height: 280px;
+	}
+	
+	h1{
+		font-size: 1.3em;
+	}
+	h2{
+		font-size: 1.1em;
+	}
+}
+
+@media (max-width:620px) {
+	.thems{
+	flex: 0 0 150px;
+	height: 240px;	
+	}
+	.wrapper{
+	padding: 5px
+	}
+}
+
+@media (max-width:420px) {
+	.thems{
+	flex-direction:column;
+	}
+}
+
+.relation img{
+	right:0;
+}
+
+.thems_txt{
+	position: absolute;
+	bottom: 0px;
+	left: 0; 
+	background: rgba(0, 0, 0, 0.3);
+	width: 100%;
+	padding: 5px;
+	text-align: center;
+	color: #fff;
+}
