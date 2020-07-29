@@ -214,6 +214,7 @@ html, body{
 	content: "";
 	float: left;
 	margin: -14px 0px 0 0;
+	z-index: 2;
 }
 
 .whatsapp:before {
@@ -226,6 +227,7 @@ html, body{
 	content: "";
 	float: left;
 	margin: -7px 0px 0px 7px;
+	z-index: 2;
 }
 
 .instagram:before {
@@ -238,4 +240,5 @@ html, body{
 	content: "";
 	float: left;
 	margin: -7px 0px 0px 7px;
+	z-index: 2;
 }
